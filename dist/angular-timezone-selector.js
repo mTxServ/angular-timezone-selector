@@ -171,6 +171,10 @@ angular.module('angular-timezone-selector', [])
 
         function setup () {
           elem.val($scope.ngModel)
+          if ($scope.initModel) {  
+            elem.val($scope.ngModel); 
+          }  
+          $scope.initModel = true;
           elem.trigger('chosen:updated')
           watch()
         }
