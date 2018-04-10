@@ -170,7 +170,6 @@ angular.module('angular-timezone-selector', [])
         var watch = $scope.$watch('ngModel', setup)
 
         function setup () {
-          elem.val($scope.ngModel)
           if ($scope.initModel) {  
             elem.val($scope.ngModel); 
           }  
